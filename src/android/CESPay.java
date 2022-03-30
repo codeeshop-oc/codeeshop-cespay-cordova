@@ -11,11 +11,10 @@ import org.json.JSONObject;
  * This class echoes a string called from JavaScript.
  */
 public class CESPay extends CordovaPlugin {
-    private static final String TAG = "SodexoPay";
+    private static final String TAG = "CESPay";
 
     @Override
-    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        Log.i(TAG, "Actions: " + action);
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {        
         if (action.equals("startPayment")) {
             String url = args.getString(0);        
             this.startPayment(url, callbackContext);
