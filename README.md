@@ -20,7 +20,7 @@ Before using application do add another dependent cordova plugin
 [cordova-plugin-inappbrowser](https://www.npmjs.com/package/cordova-plugin-inappbrowser)
 
 ```
-sodexopay.startPayment({
+CustomPayment.startPayment({
   url: 'YOUR_PAYMENT_REDIRECT_URL', 
   callbackErrorURL: 'YOUR_PAYMENT_FAILURE_URL', 
   callbackSuccessURL: 'YOUR_PAYMENT_SUCCESS_URL'
