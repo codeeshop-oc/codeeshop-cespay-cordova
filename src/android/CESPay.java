@@ -2,6 +2,7 @@ package com.codeeshop;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -14,11 +15,12 @@ public class CESPay extends CordovaPlugin {
     private static final String TAG = "CESPay";
 
     @Override
-    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {        
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+        Log.i(TAG, "Actions: " + action);
         if (action.equals("startPayment")) {
-            String url = args.getString(0);        
+            String url = args.getString(0);
             this.startPayment(url, callbackContext);
-            return true;        
+            return true;
         }
 
         return false;
