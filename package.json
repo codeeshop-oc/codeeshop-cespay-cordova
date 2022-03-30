@@ -1,7 +1,8 @@
 {
   "name": "cordova-codeeshop-cespay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova Payment Method Integration with In-App Browser",
+  "main": "www/CustomPayment.js",
   "cordova": {
     "id": "cordova-codeeshop-cespay",
     "platforms": [
@@ -10,7 +11,19 @@
   },
   "keywords": [
     "ecosystem:cordova",
+    "custom-payment",
+    "in-app-browser-payment",
+    "dynamic-payment",
     "cordova-android"
   ],
-  "author": "Code-E-Shop"  
+  "author": "Code-E-Shop",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeeshop-oc/cordova-codeeshop-cespay.git"
+  },
+  "homepage": "https://github.com/codeeshop-oc/cordova-codeeshop-cespay.git",
+  "bugs": {
+    "url": "https://github.com/codeeshop-oc/cordova-codeeshop-cespay/issues"
+  }
 }

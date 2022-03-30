@@ -1,4 +1,4 @@
-# Code-E-Shop Custom Payment Plugin Cordova
+# Code-E-Shop Custom Payment Gateway Integration Cordova Plugin
 
 Cordova Custom Payment Gateway Integration with In-App Browser
 
@@ -6,7 +6,11 @@ This Cordova plugin helps you to be able to use any Payment Gateway haveing Succ
 
 ## Installation:
 
-Add the plugin in your cordova application with the following command.
+Add another dependent cordova plugin 
+[cordova-plugin-inappbrowser](https://www.npmjs.com/package/cordova-plugin-inappbrowser)
+`cordova plugin add cordova-plugin-inappbrowser`
+
+Add this plugin in your cordova application with the following command.
 
 `cordova plugin add cordova-codeeshop-cespay`
 
@@ -15,9 +19,6 @@ It is also possible to install the plugin via repo url directly
 `cordova plugin add https://github.com/codeeshop-oc/cordova-codeeshop-cespay.git`
 
 ## Usage:
-
-Before using application do add another dependent cordova plugin 
-[cordova-plugin-inappbrowser](https://www.npmjs.com/package/cordova-plugin-inappbrowser)
 
 ```
 // Init Payment
@@ -45,7 +46,7 @@ Method: startPayment
 
 | Prop name          | Description                                      | Type    | Values                   | Default      |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------------- | ------------ |
-| url                | YOUR_PAYMENT_REDIRECT_URL                        | String  | -                        | https://pay.gw.zetapay.in/    |
+| url                | YOUR_PAYMENT_REDIRECT_URL                        | String  | -                        |     |
 | target             | key to be used to show listing data ( just one ) | String  | -                        | _blank |
 | options            | Cordova Plugin Options ( cordova-plugin-inappbrowser ) | String  | [Options](https://github.com/apache/cordova-plugin-inappbrowser#example-1)       | location=no,hidenavigationbuttons=yes,hideurlbar=yes,hardwareback=no,fullscreen=yes        |
 | callbackSuccessURL | YOUR_PAYMENT_FAILURE_URL                        | String  | -                | success      |
