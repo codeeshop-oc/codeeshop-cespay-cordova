@@ -1,7 +1,7 @@
 const exec = require('cordova/exec');
 
 const CONFIG = {
-    url: "https://pay.gw.zetapay.in/",
+    url: "",
     target: '_blank',
     options: "location=no,hidenavigationbuttons=yes,hideurlbar=yes,hardwareback=no,fullscreen=yes",
     callbackSuccessURL: 'success',
@@ -72,7 +72,11 @@ async function loadStopCallBack(event) {
 }
 
 function messageCallBack(params) {
-    console.debug(params, 'messageCallBack params')
+    console.debug(params, 'messageCallBack')
+    window.dispatchEvent(new CustomEvent("paymentmessage", {
+        bubbles: false,
+        detail: params
+    }))
     // if (event.origin !== "http://example.com")
     //   return;
 }
