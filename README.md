@@ -20,11 +20,23 @@ Before using application do add another dependent cordova plugin
 [cordova-plugin-inappbrowser](https://www.npmjs.com/package/cordova-plugin-inappbrowser)
 
 ```
+// Init Payment
 CustomPayment.startPayment({
   url: 'YOUR_PAYMENT_REDIRECT_URL', 
   callbackErrorURL: 'YOUR_PAYMENT_FAILURE_URL', 
   callbackSuccessURL: 'YOUR_PAYMENT_SUCCESS_URL'
 })
+
+// Return Payment Response Event
+window.addEventListener('paymentmessage', this.paymentCallBack)
+
+function paymentCallBack(e) {
+  if(typeof e.detail != 'undefined') {
+    console.debug(e.detail.data, 'paramsparams1')
+  } else {
+    console.debug(e, 'other paramsparamsparams')
+  }
+}
 ```
 
 ### All Params
