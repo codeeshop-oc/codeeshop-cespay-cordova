@@ -1,8 +1,7 @@
 {
   "name": "cordova-codeeshop-cespay",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cordova Payment Method Integration with In-App Browser",
-  "main": "www/CustomPayment.js",
   "cordova": {
     "id": "cordova-codeeshop-cespay",
     "platforms": [

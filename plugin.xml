@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova-codeeshop-cespay" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-	<name>cespay</name>
+	<name>cordova-codeeshop-cespay</name>
 	<js-module name="CustomPayment" src="www/CustomPayment.js">
 		<clobbers target="CustomPayment" />
 	</js-module>
@@ -8,6 +8,7 @@
 		<config-file parent="/*" target="res/xml/config.xml">
 			<feature name="CESPay">
 				<param name="android-package" value="com.codeeshop.CESPay" />
+				<param name="onload" value="true"/>
 			</feature>
 		</config-file>
 		<config-file parent="/*" target="AndroidManifest.xml">
