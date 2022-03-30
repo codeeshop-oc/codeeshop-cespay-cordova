@@ -18,7 +18,7 @@ public class CESPay extends CordovaPlugin {
         Log.i(TAG, "Actions: " + action);
         if (action.equals("startPayment")) {
             String url = args.getString(0);        
-            this.startPayment(message, callbackContext);
+            this.startPayment(url, callbackContext);
             return true;        
         }
 
