@@ -1,9 +1,9 @@
 {
-  "name": "codeeshop-cespay-cordova",
+  "name": "cordova-codeeshop-cespay",
   "version": "1.0.0",
   "description": "Cordova Payment Method Integration with In-App Browser",
   "cordova": {
-    "id": "codeeshop-cespay-cordova",
+    "id": "cordova-codeeshop-cespay",
     "platforms": [
       "android"
     ]
