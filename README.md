@@ -41,7 +41,7 @@ function paymentCallBack(e) {
 ```
 ## Live Demo
 
-[Youtube Link](https://www.youtube.com/embed/AoRvwAklZaQ)
+[![Youtube Link](https://img.youtube.com/vi/AoRvwAklZaQ/0.jpg)](http://www.youtube.com/watch?v=AoRvwAklZaQ)
 
 ### All Params
 
