@@ -57,4 +57,4 @@ Method: startPayment
 
 ## 🔖 License
 
-This software is licensed under the [MIT](https://github.com/codeeshop-oc/vue-full-autocomplete/blob/main/LICENSE).
+This software is licensed under the [MIT](../main/LICENSE).
