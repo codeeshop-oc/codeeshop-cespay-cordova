@@ -84,7 +84,6 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 
-docs/.vitepress/dist
 docs/.vitepress/cache
 .gitignore
 node_modules
