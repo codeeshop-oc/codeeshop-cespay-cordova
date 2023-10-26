@@ -3,8 +3,9 @@
 name: Deploy VitePress site to Pages
 
 on:
-  types: [created]    
-  
+  release:
+    types: [created]
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -30,7 +31,7 @@ jobs:
         with:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
       - uses: pnpm/action-setup@v2 # Uncomment this if you're using pnpm
-            
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -61,4 +62,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2  
+        uses: actions/deploy-pages@v2
