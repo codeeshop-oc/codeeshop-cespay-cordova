@@ -1,6 +1,7 @@
 {
   "name": "cordova-codeeshop-cespay",
-  "version": "1.0.4",
+  "private": false,
+  "version": "1.0.5",
   "description": "Cordova Payment Method Integration with In-App Browser",
   "cordova": {
     "id": "cordova-codeeshop-cespay",
@@ -21,8 +22,16 @@
     "type": "git",
     "url": "git+https://github.com/codeeshop-oc/cordova-codeeshop-cespay.git"
   },
-  "homepage": "https://github.com/codeeshop-oc/cordova-codeeshop-cespay.git",
+  "homepage": "https://codeeshop-oc.github.io/cordova-codeeshop-cespay",
   "bugs": {
     "url": "https://github.com/codeeshop-oc/cordova-codeeshop-cespay/issues"
+  },
+  "devDependencies": {
+    "vitepress": "1.0.0-rc.24"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   }
 }

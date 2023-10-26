@@ -1,8 +1,13 @@
-# Code-E-Shop Custom Payment Gateway Integration Cordova Plugin
+# CesPay - Cordova Plugin
+
+[![Latest Stable Version](https://img.shields.io/npm/v/cordova-codeeshop-cespay.svg)](https://www.npmjs.com/package/cordova-codeeshop-cespay) [![Total Downloads](https://img.shields.io/npm/dt/cordova-codeeshop-cespay.svg)](https://npm-stat.com/charts.html?package=cordova-codeeshop-cespay)
+[![license](https://img.shields.io/badge/license-MIT-green)](https://github.com/codeeshop-oc/cordova-codeeshop-cespay/blob/main/LICENSE)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/codeeshop-oc/cordova-codeeshop-cespay/issues?&q=is%3Aissue+is%3Aopen)
+![Downloads Monthly](https://img.shields.io/npm/dm/cordova-codeeshop-cespay.svg)
 
 Cordova Custom Payment Gateway Integration with In-App Browser
 
-This Cordova plugin helps you to be able to use any Payment Gateway haveing Succeess and Failed Callback URL to return response with your Cordova hybrid application. This plugin supports Android.
+This Cordova plugin helps you to be able to use any Payment Gateway haveing Success and Failed Callback URL to return response with your Cordova hybrid application. This plugin supports Android.
 
 ## Installation:
 
