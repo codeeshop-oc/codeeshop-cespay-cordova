@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "💳 CesPay",
+  base: '/cordova-codeeshop-cespay/',
   description: "Cordova Payment Method Integration with In-App Browser",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
